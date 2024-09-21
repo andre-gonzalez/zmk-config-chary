@@ -48,8 +48,6 @@
    &trans &kp Z      &kp X      &kp C       &kp V         &kp B         &hm N1    N &hm N2     M    &hm N3 COMMA  &kp DOT    &kp FSLH      &trans
                                 &mkp LCLK      &lt LOWER DEL &kp SPACE     &kp BSPC    &lt RAISE RET   &mkp RCLK
             >;
-
-            trackball-bindings = <&tmv_coarse>;
         };
 
 
