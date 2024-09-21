@@ -10,11 +10,6 @@
 #define LOWER   2
 #define MULTI   3
 
-&lt {
-    tapping-term-ms = <240>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-};
 
 / {
     trackball_listener {
@@ -56,6 +51,7 @@
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_WHEEL>;
     };
+    
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
