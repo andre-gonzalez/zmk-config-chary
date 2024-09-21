@@ -51,7 +51,7 @@
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_WHEEL>;
     };
-
+    
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -85,7 +85,7 @@
    &trans &hm ESC  Q &kp W      &kp E       &kp R         &kp T         &kp Y       &kp U           &kp I        &kp O      &kp P         &trans
    &trans &hm RALT A &hm LALT S &hm LCTRL D &hm LSHIFT F  &hm LMETA G   &hm LMETA H &hm LSHIFT J    &hm LCTRL  K  &hm LALT L &hm RALT SEMI &trans 
    &trans &kp Z      &kp X      &kp C       &kp V         &kp B         &hm N1    N &hm N2     M    &hm N3 COMMA  &kp DOT    &kp FSLH      &trans
-                                &trans      &lt LOWER DEL &kp SPACE     &kp BSPC    &lt RAISE RET   &trans
+                                &mkp LCLK      &lt LOWER DEL &kp SPACE     &kp BSPC    &lt RAISE RET   &mkp RCLK
             >;
 
             trackball-bindings = <&tmv_coarse>;
