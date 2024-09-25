@@ -13,7 +13,7 @@
 #define MULTI   3
 
 &hid_trackball_interface {
-    automouse-layer = <0>;
+    automouse-layer = <>;
     automouse-layer-timeout-ms = <600>;
     scroll-layers = <2>;
     snipe-layers = <3>;
