@@ -142,15 +142,13 @@
 //                                    ┗━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┛
                         label = "Raise";
                         bindings = <
-							// ADICIONAR AQUI OS SIMBOLOS DE OPERACOES MATEMATICAS
-							// / + -
 //    ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
 //    ┃    CAPSLOCK   ┃      [(=)     ┃       ↑       ┃               ┃               ┃  ┃     "(~)      ┃       N7      ┃       N8      ┃       N9      ┃       *       ┃
-&trans &kp CAPSLOCK         &LBKT          &kp UP           &trans         &trans              &DQT          &kp N7          &kp N8          &kp N9         &kp STAR       &trans
+&trans &kp CAPSLOCK       &kp LBKT          &kp UP          &trans         &trans           &kp DQT          &kp N7          &kp N8          &kp N9         &kp STAR       &trans
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
 //    ┃               ┃      LALT     ┃      LCTRL    ┃     LSHIFT    ┃     LMETA     ┃  ┃     LMETA     ┃     LSHIFT    ┃     LCTRL     ┃      LALT     ┃     RALT      ┃
 //    ┃               ┃       ←       ┃       ↓       ┃       →       ┃               ┃  ┃      `(/)     ┃       N4      ┃       N5      ┃       N6      ┃      ~(-)     ┃
-&trans     &trans       &hm LALT LEFT   &hm LCTRL DOWN &hm LSHIFT RIGHT  &hm LMETA        &hm LMETA GRAVE  &hm LSHIFT N4    &hm LCTRL N5    &hm LALT N6    &hm RALT TILDE  &trans
+&trans     &trans       &hm LALT LEFT   &hm LCTRL DOWN &hm LSHIFT RIGHT  &hm LMETA G       &hm LMETA GRAVE  &hm LSHIFT N4    &hm LCTRL N5    &hm LALT N6    &hm RALT TILDE  &trans
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃               ┃
 //    ┃               ┃      W(,)     ┃      C(J)     ┃      V(K)     ┃     E(.)      ┃  ┃       N0      ┃       N1      ┃       N2      ┃       N3      ┃      {(+)     ┃
@@ -188,7 +186,7 @@
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃     LMETA     ┃     LSHIFT    ┃     LCTRL     ┃      LALT     ┃     RALT      ┃
 //    ┃      Q(")     ┃       <       ┃       >       ┃               ┃               ┃  ┃               ┃               ┃               ┃      ~(-)     ┃      |        ┃
-&trans      &kp q         &trans LT       &trans GT         &trans         &trans           &hm LMETA       &hm LSHIFT       &hm LCTRL    &hm LALT TILDE   &hm RALT PIPE   &trans
+&trans      &kp Q         &kp LT          &kp GT           &trans         &trans           &hm LMETA  H    &hm LSHIFT J     &hm LCTRL K  &hm LALT TILDE   &hm RALT PIPE   &trans
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃               ┃
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃      TAB      ┃      HOME     ┃      END      ┃       (/)     ┃      (\)      ┃
