@@ -107,9 +107,9 @@
             label = "Base";
             bindings = <
 //    ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
-//    ┃    CAPSLOCK   ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃     `(?)      ┃
+//    ┃    CAPSLOCK   ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃               ┃
 //    ┃      Q(´)     ┃      W(,)     ┃      E(.)     ┃      R(P)     ┃      T(Y)     ┃  ┃      Y(F)     ┃      U(G)     ┃      I(C)     ┃      O(R)     ┃     P(L)      ┃
-&trans  &hm CAPSLOCK Q   &kp W           &kp E           &kp R           &kp T              &kp Y           &kp U           &kp I           &kp O           &hm LBRC  P     &trans
+&trans  &hm CAPSLOCK Q   &kp W           &kp E           &kp R           &kp T              &kp Y           &kp U           &kp I           &kp O              &kp P       &trans
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
 //    ┃      RALT     ┃      LALT     ┃      LCTRL    ┃     LSHIFT    ┃     LMETA     ┃  ┃     LMETA     ┃     LSHIFT    ┃     LCTRL     ┃      LALT     ┃     RALT      ┃
 //    ┃      A(A)     ┃      S(O)     ┃      D(E)     ┃      F(U)     ┃      G(I)     ┃  ┃      H(D)     ┃      J(H)     ┃     K(T)      ┃      L(N)     ┃     ;(S)      ┃
@@ -181,12 +181,12 @@
 							// incluir {}[]()@#$%!"'<>{
 //    ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃               ┃
-//    ┃    CAPSLOCK   ┃               ┃               ┃               ┃               ┃  ┃       {       ┃        }      ┃      -([)     ┃      =(])     ┃       ?       ┃
-&trans &kp CAPSLOCK        &trans          &trans           &trans         &trans             &trans           &trans         &kp MINUS     &kp EQUAL       &kp QMARK      &trans
+//    ┃    CAPSLOCK   ┃               ┃               ┃               ┃               ┃  ┃       {       ┃        }      ┃      -([)     ┃      =(])     ┃     `(?)      ┃
+&trans &kp CAPSLOCK        &trans          &trans           &trans         &trans             &trans           &trans         &kp MINUS     &kp EQUAL       &kp LBRC       &trans
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃     LMETA     ┃     LSHIFT    ┃     LCTRL     ┃      LALT     ┃     RALT      ┃
 //    ┃      Q(")     ┃       <       ┃       >       ┃               ┃               ┃  ┃               ┃               ┃               ┃      ~(-)     ┃      |        ┃
-&trans      &kp Q         &kp LT          &kp GT           &trans         &trans           &hm LMETA  H    &hm LSHIFT J     &hm LCTRL K  &hm LALT TILDE   &hm RALT PIPE   &trans
+&trans      &kp Q         &kp LT          &kp GT           &trans         &trans           &hm LMETA  H    &hm LSHIFT J     &hm LCTRL K  &hm LALT TILDE   &hm RALT PIPE    &trans
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃               ┃
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃      TAB      ┃      HOME     ┃      END      ┃       (/)     ┃      (\)      ┃
