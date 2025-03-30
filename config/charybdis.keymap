@@ -42,7 +42,7 @@
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
-        bindings = <&ib_wheel_scaler 1 8>;
+        bindings = <&ib_wheel_scaler 1 16>;
     };
 
     trackball_hscroll_listener {
@@ -51,7 +51,7 @@
         layers = <1 2>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
-        bindings = <&ib_hwheel_scaler 1 8>;
+        bindings = <&ib_hwheel_scaler 1 16>;
     };
 
     ib_wheel_scaler: ib_wheel_scaler {
