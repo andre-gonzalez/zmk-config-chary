@@ -95,6 +95,20 @@
                 <&mo>,
                 <&kp>;
         };
+        uc_lbrace: zmk,behavior-unicode@lbrace  {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <2>;
+            method = "linux";
+            codepoint-lower = <0x5B>;   /* '[' */
+            codepoint-upper = <0x7B>;   /* '{' */
+        };
+        uc_rbrace: zmk,behavior-unicode@rbrace {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <2>;
+            method = "linux";
+            codepoint-lower = <0x5D>;   /* ']' */
+            codepoint-upper = <0x7D>;   /* '}' */
+        };
     };
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -123,7 +137,7 @@
             label = "Base";
             bindings = <
 //    ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
-//    ┃               ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃               ┃
+//    ┃    CAPSLOCK   ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃               ┃
 //    ┃      Q(')     ┃      W(,)     ┃      E(.)     ┃      R(P)     ┃      T(Y)     ┃  ┃      Y(F)     ┃      U(G)     ┃      I(C)     ┃      O(R)     ┃     P(L)      ┃
 &trans      &kp Q           &kp W           &kp E           &kp R           &kp T              &kp Y           &kp U           &kp I           &kp O          &kp P       &trans
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
@@ -194,11 +208,10 @@
 //                                    ┗━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┛
                         label = "Lower";
                         bindings = <
-							// incluir `
 //    ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃               ┃               ┃               ┃               ┃               ┃
 //    ┃    CAPSLOCK   ┃               ┃       ↑       ┃       `       ┃               ┃  ┃   PAGE DOWN   ┃    PAGE UP    ┃      -([)     ┃      =(])     ┃     `(?)      ┃
-&trans &kp CAPSLOCK        &trans          &kp UP          &kp GRAVE       &trans            &kp PG_DN        &kp PG_UP      &kp MINUS     &kp EQUAL       &kp LBRC       &trans
+&trans &kp CAPSLOCK        &trans          &kp UP          &kp GRAVE       &trans            &kp PG_DN        &kp PG_UP      &uc_lbrace     &uc_rbrace       &kp LBRC       &trans
 //    ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
 //    ┃               ┃               ┃               ┃               ┃               ┃  ┃     LMETA     ┃     LSHIFT    ┃     LCTRL     ┃      LALT     ┃     RALT      ┃
 //    ┃      Q(")     ┃       ←       ┃       ↓       ┃       →       ┃               ┃  ┃               ┃               ┃               ┃      ~(-)     ┃      |        ┃
